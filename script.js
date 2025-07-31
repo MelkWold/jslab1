@@ -46,11 +46,16 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 
 // Part 1: ---------------------------------------------------------------------------------------------|
  //Check if all numbers are divisible by 5. Cache the result in a variable.
+ // First plan: check if the last digit of the number is a 5 or a 0
 //  const isDivisibleby5 =(n1[-1] == 0 || n1[-1] ==5) && (n2[-1] == 0 || n2[-1] ==5) && (n3[-1] == 0|| n3[-1] == 5) && (n4[-1] == 0|| n4[-1] ==5);
 
+// Second alternative plan: determine if the type of the sum of the remainders after diving by 5 is float or not
  const isDivisibleby5 = typeof ((n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5)) !== "float";
 //  console.log(`${n1}, ${n2}, ${n3} and ${n4} are all divisible by 5`);
  console.log(isDivisibleby5)
+
+ // Third alternative: check of the sum of the modular division is 0
+ const isDivisibleby5a = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) ==0;
 
  // Check if the first number is larger than the last. Cache the result in a variable.
 const isFirstLargerThanLast = n1 > n4;
