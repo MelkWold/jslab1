@@ -61,16 +61,19 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 const isFirstLargerThanLast = n1 > n4;
 
 //Accomplish the following arithmetic chain:
+
 // Subtract the first number from the second number.
 const difference = n2-n1
+
 // Multiply the result by the third number.
 const product = (difference * n3)
+
 // Find the remainder of dividing the result by the fourth number.
 const remaiNder = (product % n4)
 
 // Change the way that isOver25 calculates so that we do not need to use the NOT operator (!) in other logic comparisons. Rename the variable as appropriate.// 
 
-const isUnder25 = n1 < 25 || n2 < 25 || n3 < 25 || n4 < 25;
+const isUnder25 = n1 < 25 && n2 < 25 && n3 < 25 && n4 < 25;
 
 // Part 2: ---------------------------------------------------------------------------------------------|
 // You are planning a cross-country road trip!
