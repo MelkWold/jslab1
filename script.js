@@ -73,7 +73,7 @@ const remaiNder = (product % n4)
 
 // Change the way that isOver25 calculates so that we do not need to use the NOT operator (!) in other logic comparisons. Rename the variable as appropriate.// 
 
-const isUnder25 = n1 < 25 && n2 < 25 && n3 < 25 && n4 < 25;
+const isUnder25 = n1 <= 25 && n2 <= 25 && n3 <= 25 && n4 <= 25;
 
 // Part 2: ---------------------------------------------------------------------------------------------|
 // You are planning a cross-country road trip!
@@ -109,13 +109,13 @@ const fuelNeeded60 = distance/fuelEfficiency60;
 const costAt60 = fuelNeeded60 * fuelCost;
 const tripLength60 = distance / 60;
 
-console.log(`At an average speed of 55 miles per hour, the trip will take ${tripLength60} hours and will cost ${costAt60} dollars. Because the budget is ${budget}, it will be enough for the trip.`)
+console.log(`At an average speed of 60 miles per hour, the trip will take ${tripLength60} hours and will cost ${costAt60} dollars. Because the budget is ${budget}, it will be enough for the trip.`)
 
 // cost and budget traveling at 70 miles per hour
 const fuelNeeded70 = distance/fuelEfficiency70;
 const costAt70 = fuelNeeded70 * fuelCost;
 const tripLength70 = distance / 70;
 
-console.log(`At an average speed of 55 miles per hour, the trip will take ${tripLength70} hours and will cost ${costAt70} dollars. Because the budget is ${budget}, it will NOT be enough for the trip.`)
+console.log(`At an average speed of 70 miles per hour, the trip will take ${tripLength70} hours and will cost ${costAt70} dollars. Because the budget is ${budget}, it will NOT be enough for the trip.`)
 
 
