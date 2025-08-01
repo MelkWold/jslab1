@@ -85,7 +85,7 @@ const fuelEfficiency55 = 30;
 // At 60 miles per hour, you get 28 miles per gallon.
 const fuelEfficiency60 = 28;
 // At 75 miles per hour, you get 23 miles per gallon.
-const fuelEfficiency70 = 23;
+const fuelEfficiency75 = 23;
 // You have a fuel budget of $175.
 const budget = 175;
 // The average cost of fuel is $3 per gallon.
@@ -111,11 +111,11 @@ const tripLength60 = distance / 60;
 
 console.log(`At an average speed of 60 miles per hour, the trip will take ${tripLength60} hours and will cost ${costAt60} dollars. Because the budget is ${budget}, it will be enough for the trip.`)
 
-// cost and budget traveling at 70 miles per hour
-const fuelNeeded70 = distance/fuelEfficiency70;
-const costAt70 = fuelNeeded70 * fuelCost;
-const tripLength70 = distance / 70;
+// cost and budget traveling at 75 miles per hour
+const fuelNeeded75 = distance/fuelEfficiency75;
+const costAt75 = fuelNeeded75 * fuelCost;
+const tripLength75 = distance / 70;
 
-console.log(`At an average speed of 70 miles per hour, the trip will take ${tripLength70} hours and will cost ${costAt70} dollars. Because the budget is ${budget}, it will NOT be enough for the trip.`)
+console.log(`At an average speed of 75 miles per hour, the trip will take ${tripLength75} hours and will cost ${costAt75} dollars. Because the budget is ${budget}, it will NOT be enough for the trip.`)
 
 
