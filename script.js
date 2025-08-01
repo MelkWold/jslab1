@@ -91,16 +91,22 @@ const budget = 175;
 // The average cost of fuel is $3 per gallon.
 const fuelCost = 3;
 // Set up a program to answer the following questions:
-// How many gallons of fuel will you need for the entire trip?
-// Will your budget be enough to cover the fuel expense?
-// How long will the trip take, in hours?
-// Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
-// Log the results of your calculations using string concatenation or template literals.
+  // How many gallons of fuel will you need for the entire trip?
+  // Will your budget be enough to cover the fuel expense?
+  // How long will the trip take, in hours?
+  // Compare the results when traveling at an average of 55, 60, and 75 miles per hour. Which makes the most sense for the trip?
+  // Log the results of your calculations using string concatenation or template literals.
 
 // cost and budget traveling at 55 miles per hour
 const fuelNeeded55 = distance/fuelEfficiency55;
 const costAt55 = fuelNeeded55 * fuelCost;
 const tripLength55 = distance / 55;
+
+{
+  isBudgetEnough55 = budget >= costAt55;
+  console.log(`Budget is enough for the trip? ${isBudgetEnough55}`)
+};
+
 
 console.log(`At an average speed of 55 miles per hour, the trip will take ${tripLength55} hours and will cost ${costAt55} dollars. Because the budget is ${budget}, it will be enough for the trip.`)
 
@@ -108,6 +114,12 @@ console.log(`At an average speed of 55 miles per hour, the trip will take ${trip
 const fuelNeeded60 = distance/fuelEfficiency60;
 const costAt60 = fuelNeeded60 * fuelCost;
 const tripLength60 = distance / 60;
+let isBudgetEnough60 
+
+{
+  isBudgetEnough60 = budget >= costAt60;
+  console.log(`Budget is enough for the trip? ${isBudgetEnough60}`)
+};
 
 console.log(`At an average speed of 60 miles per hour, the trip will take ${tripLength60} hours and will cost ${costAt60} dollars. Because the budget is ${budget}, it will be enough for the trip.`)
 
@@ -116,6 +128,13 @@ const fuelNeeded75 = distance/fuelEfficiency75;
 const costAt75 = fuelNeeded75 * fuelCost;
 const tripLength75 = distance / 70;
 
+{
+  isBudgetEnough75 = budget >= costAt75;
+  console.log(`Budget is enough for the trip? ${isBudgetEnough75}`)
+};
+
 console.log(`At an average speed of 75 miles per hour, the trip will take ${tripLength75} hours and will cost ${costAt75} dollars. Because the budget is ${budget}, it will NOT be enough for the trip.`)
+
+
 
 
